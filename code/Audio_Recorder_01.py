@@ -1,0 +1,2 @@
+import pyaudio
+import wave

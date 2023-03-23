@@ -39,4 +39,7 @@ soundmeter --trigger +70 --action exec --exec Recording_Activate.sh
 [1] Trigger value +70 will change depending on noise level of your environment and sensitivity of your microphone. 
 Start with a lower value and then gradually increment value to get personalized settings
 
-[2] Recording_Activate.sh script has USB Microphone interface listed as 4. This maybe different on different raspberry pi and may change depending on USB Controller settings. To update to correct value check instructions in Audio_Recorder.md
+[2] Recording_Activate.sh script has USB Microphone interface listed as 4. This maybe different on different raspberry pi and may change depending on USB Controller settings. To update to correct value check instructions for running [Audio_Recoder.py](Audio_Recorder.md)
+
+[3] You can list connected Audio devices using script 
+```python3 Audio_device_list.py```

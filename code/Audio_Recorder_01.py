@@ -1,6 +1,7 @@
 import pyaudio
 import wave
 import sys
+from datetime import datetime
 
 def main():
     if len(sys.argv) > 1:
@@ -46,7 +47,12 @@ def main():
         print("Please provide the USB Mic Device Interface Number as Command Line Parameter")
         
 def get_New_Recording_FileName():
-    recFile = '.wav'
-    
+    fileExt = '.wav'
+    currentTime = datetime.now()
+    currentHour = currentTime.hour
+    currentMinute = currentTime.minute
+    currentSecond = currentTime.second
+    fileName = str(currentHour) + '_' + str(currentMinute) + '_' + str(currentSecond) + fileExt
+    return fileName
     
 if __name__ == "__main__": main()

@@ -49,3 +49,7 @@ Start with a lower value and then gradually increment value to get personalized 
 
 [3] You can list connected Audio devices using script 
 ```python3 Audio_device_list.py```
+
+[4] Before execution of script if the following file exists please DELETE it:
+``` already_rec.txt ```
+This file is a circumvent to make sure only one instance of Audio recording script runs concurrently

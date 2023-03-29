@@ -57,9 +57,9 @@ def main():
         # remove currently recording status indicator
             os.remove(recordingStatusIndicator)
         else:
-            print("Please provide the USB Mic Device Interface Number as Command Line Parameter")
+            print("Recording in progress...")
     else:
-        print("Recording in progress...")
+        print("Please provide the USB Mic Device Interface Number as Command Line Parameter")
         
 def get_New_Recording_FileName():
     fileExt = '.wav'

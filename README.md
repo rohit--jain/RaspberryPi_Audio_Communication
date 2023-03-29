@@ -6,7 +6,7 @@ check markup descrption files inside [code](https://github.com/rohit--jain/Raspb
 
 # Description 
 
-This python project records Audio from USB Mic for specified [number of seconds] when ambient noise of certain [RMS threshold value] (Volume) is observed.
+This python project records Audio from USB Mic for specified <b>[number of seconds]</b> when ambient noise of certain <b>[RMS threshold value] (Volume)</b> is observed.
 
 To engage noise based trigger I used shichao-an's ([soundmeter](https://github.com/shichao-an/soundmeter)) project, which provides soundmeter as a PIP package
 

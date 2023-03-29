@@ -3,7 +3,9 @@
 [1] Install python3 pip package for sound meter. For details refer: https://github.com/shichao-an/soundmeter
 You may need to install extra python packages along the way to complete this step.
 
-[2] Add entry to PATH variable for '/home/pi/.local/bin'
+[2] If soundmeter doesn't run directly from command line then do this step:
+
+Add entry to PATH variable for '/home/pi/.local/bin'
 To do this you need to sudo nano ~/.bashrc 
 and add following lines at the end:
 
@@ -22,7 +24,11 @@ For details refer following forum post: https://forums.raspberrypi.com/viewtopic
 
 [3] Reboot to apply changes. After reboot soundmeter should directly run from terminal
 
-[4] Make Recording_Activate.sh executable with following command:
+[4] Make sure your Sound Volume settings has appropiate selection for "AV Jack" or "HDMI"
+
+[5] Make sure your USB microphone is connected to USB 2.0 port -> top slot and not bottom on the Raspberry Pi 4. Also make sure that microphone volume is set to maximum level for properly recording sound. 
+
+[6] Make Recording_Activate.sh executable with following command:
 ```
 chmod +x Recording_Activate.sh
 ```
